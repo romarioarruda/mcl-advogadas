@@ -26,6 +26,12 @@
     <link href="./assets/css/header.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/footer.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        h1, h2, h3, h4, h5, h6, span, p {
+            user-select: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,6 +47,52 @@
                 <span>COSTA</span>
                 <span>& LIMA</span>
             </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg" id="menu-mobile">
+            <ul class="navbar-nav">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <ul id="navbarToggleExternalContent">
+                        <li class="nav-item">
+                            <a aria-current="page" href="#especialistas">ESPECIALISTAS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#sobre">INSTITUCIONAL</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#contato">CONTATOS</a>
+                          </li>
+                    </ul>
+                  </div>
+                  <nav class="navbar navbar-dark">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler navbar-toggler-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div>
+                  </nav>
+                <li class="nav-item menu-desk">
+                  <a aria-current="page" href="#especialistas">ESPECIALISTAS</a>
+                </li>
+                <li class="nav-item menu-desk">
+                  <a href="#sobre">INSTITUCIONAL</a>
+                </li>
+                <li class="nav-item menu-desk">
+                  <a href="#contato">CONTATOS</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="redes-contato">
+            <a 
+                title="Nosso instagram" 
+                href="https://www.instagram.com/mcl.advogadas" 
+                target="_blank" 
+                rel="noopener noreferrer nofollow"><i class="bi bi-instagram"></i></a>
+            
+            <a 
+                title="Nosso email" 
+                href="mailto:moraescostaelima@gmail.com"><i class="bi bi-envelope"></i></a>
         </div>
     </header>
 
@@ -89,7 +141,7 @@
             <hr style="color: #333366;">
         </div>
 
-        <h2>Advogadas</h2>
+        <h2 id="especialistas">Advogadas</h2>
         <hr style="color: #333366;">
         <div id="area-advogadas">
             <div class="card mb-4">
@@ -146,48 +198,43 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="contato">
         <div class="main">
             <div class="footer-right-side">
                 <p><strong>Endereço:</strong></p>
                 <p>Edifício Los Angeles, sala 201.</p>
-                <p>Av. Colares Moreira, Bairro Renascença.</p>
+                <p>Av. Colares Moreira,</p>
+                <p>Bairro Renascença.</p>
                 <p>São Luis - MA</p>
             </div>
             <div class="footer-center-side">
                 <p><strong>Localização:</strong></p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.011049343139!2d-44.29519548555761!3d-2.5032400981759264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68c2db960c847%3A0x7d3b90b24313f0e9!2sEdif%C3%ADcio%20Los%20Angeles!5e0!3m2!1spt-BR!2sbr!4v1641393654900!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="footer-left-side">
+            <div class="footer-top-left-side">
+                <p><strong>Advogadas:</strong></p>
                 <div class="contato-1">
-                    <span>Dra. Taynara Moraes - OAB/MA: 21.999</span>
-                    <p>Tel: (98) 98164-9210</p>
+                    <span>Dra. Taynara Moraes</span><br>
+                    <span>OAB/MA: 21.999</span><br>
+                    <span>TEL: (98) 98164-9210</span>
                 </div>
                 <div class="contato-2">
-                    <span>Dra. Bruna Costa - OAB/MA: 20.734</span>
-                    <p>Tel: (98) 98831-1257</p>
+                    <span>Dra. Bruna Costa</span><br>
+                    <span>OAB/MA: 20.734</span><br>
+                    <span>TEL: (98) 98831-1257</span>
                 </div>
                 <div class="contato-3">
-                    <span>Dra. Tatiane Lima - OAB/MA: 22.626</span>
-                    <p>Tel: (98) 98529-7496</p>
+                    <span>Dra. Tatiane Lima</span><br>
+                    <span>OAB/MA: 22.626</span><br>
+                    <span>TEL: (98) 98529-7496</span>
                 </div>
             </div>
         </div>
-        <div class="main-second">
-            <p class="mt-5">MCL Advogadas © 2022 Todos os Direitos Reservados.</p>
-            <div class="footer-left-side">
-                <span title="Nosso instagram">
-                    <a href="https://www.instagram.com/mcl.advogadas" target="_blank" rel="noopener noreferrer nofollow"><i
-                            class="bi bi-instagram"></i></a>
-                </span>
-                <span title="Nosso email">
-                    <a href="mailto:moraescostaelima@gmail.com"><i class="bi bi-envelope"></i></a>
-                </span>
-                
-                <button class="btn btn-mcl" onclick="scrollTopReturn()" title="Retorne ao topo">
-                    <i class="bi bi-chevron-double-up"></i>
-                </button>
-            </div>
+        <div class="rodape">
+            <p>MCL Advogadas © 2022 Todos os Direitos Reservados.</p>
+            <button class="btn btn-mcl" onclick="scrollTopReturn()" title="Retorne ao topo">
+                <i class="bi bi-chevron-double-up"></i>
+            </button>
         </div>
     </footer>
 

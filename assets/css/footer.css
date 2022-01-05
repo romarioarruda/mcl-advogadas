@@ -1,3 +1,8 @@
+.btn-mcl {
+    background-color: #FF9999;
+    color: #FFF;
+}
+
 footer {
     width: 100%;
     background-color: #333366;;
@@ -12,29 +17,39 @@ footer .main {
     flex-wrap: wrap;
 }
 
-footer .main-second {
-    display: flex;
-    justify-content: space-between;
+.footer-top-left-side {
+    margin-right: 30px;
 }
 
-footer .main-second p {
-    text-align: center;
-}
-
-.footer-left-side {
-    margin-top: 40px;
+.footer-left-side{
+    margin-right: 30px;
+    margin-top: 20px;
 }
 
 .footer-left-side span {
-    font-size: 20px;
-    margin: 8px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.footer-top-left-side .contato-1, .footer-top-left-side .contato-2, .footer-top-left-side .contato-3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #FF9999;
 }
 
 .footer-left-side span a{
     color:#FF9999;
 }
 
-.btn-mcl {
-    background-color: #FF9999;
-    color: #FFF;
+footer .rodape {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 70px;
+}
+
+
+@media (max-width: 576px) {
+    .footer-top-left-side {
+        margin-top: 16px;
+    }
 }

@@ -7,9 +7,6 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    margin-right: 150px;
-}
 nav ul li a {
     color: #FF9999;
     text-decoration: none;
@@ -33,16 +30,10 @@ nav ul li a:hover {
     justify-content: flex-start;
 }
 
-.redes-contato * {
+footer .redes-contato * {
     color: #FF9999;
     margin-right: 10px;
     margin-top: 10px;
-}
-
-.redes-contato {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
 }
 
 .header-right-side, .header-left-side {
@@ -70,20 +61,10 @@ nav ul li a:hover {
         display: none;
     }
 
-    nav {
-        margin-right: 0px;
-    }
-
     #menu-mobile {
         position: absolute;
         right: 0;
         top: 0px;
         padding-top: 0px;
-    }
-
-    .redes-contato {
-        position: absolute;
-        right: -7px;
-        top: 60px;
     }
 }

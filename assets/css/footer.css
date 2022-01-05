@@ -1,0 +1,31 @@
+footer {
+    width: 100%;
+    background-color: #333366;;
+    color:#FF9999;
+    padding: 10px;
+    margin-top: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-left-side span {
+    font-size: 20px;
+    margin: 8px;
+}
+
+.footer-left-side span a{
+    color:#FF9999;
+}
+
+.btn-mcl {
+    background-color: #FF9999;
+    color: #FFF;
+}

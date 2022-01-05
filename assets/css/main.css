@@ -1,0 +1,57 @@
+main h2 {
+    color: #333366;
+}
+
+.border-central {
+    border-right: 2px solid #FF9999;
+}
+
+#area-especialidades {
+    display: flex;
+    flex-direction: column;
+}
+
+#area-especialidades .card {
+    width: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#area-especialidades .card img {
+    width: 250px;
+}
+
+#area-advogadas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#area-advogadas .card {
+    width: 18rem;
+}
+
+#area-advogadas .card .card-body, #area-especialidades .card .card-body {
+    background-color: #333366;
+    color: #FF9999;
+}
+
+@media (max-width: 576px) {
+    #area-especialidades .card {
+        width: 100%;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #area-especialidades .card img {
+        width: 100%;
+    }
+
+    #area-advogadas .card {
+        width: 100%;
+    }
+}

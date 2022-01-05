@@ -1,0 +1,33 @@
+header {
+    background-color: #333366;
+    color:#FF9999;
+    height: 100px;
+}
+
+#banner {
+    width: 300px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-right-side, .header-left-side {
+    align-self: center;
+}
+
+.header-right-side p{
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+.header-left-side span{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-border-central {
+    border-right: 1px solid #FF9999;
+    margin-right: 10px;
+    margin-left: 10px;
+}

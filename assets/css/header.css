@@ -57,6 +57,16 @@ footer .redes-contato * {
 }
 
 @media (max-width: 810px) {
+    header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #banner {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
     .menu-desk {
         display: none;
     }
@@ -66,5 +76,28 @@ footer .redes-contato * {
         right: 0;
         top: 0px;
         padding-top: 0px;
+        width: 100%;
+        background-color: '';
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-desk {
+        display: none;
+    }
+
+    #menu-mobile {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        padding-top: 0px;
+        width: 100%;
+        z-index: 9;
+    }
+}
+
+@media (max-width: 350px) {
+    #ul-menu-mobile {
+        background-color: #333366;
     }
 }
